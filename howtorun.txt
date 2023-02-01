@@ -1,0 +1,8 @@
+Go to terminal (cmd)
+make sure naka install na ng node.js this one is a javascript framework 
+search nyo nalang "how to install node js"
+
+after installing, using the terminal go to the directory kung nasan naka lagay itong folder 
+run sa terminal 'node script_for_console.js' para ma e run yung console program. 
+
+sa browser naman pedi rin e preview by clicking the file index.html..
