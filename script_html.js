@@ -84,6 +84,7 @@ function StartGame(choice){
    }else if(random_num<0){
     statusCard = "Going Down"
    }
+   document.getElementById("chosenid").innerHTML = status
    document.getElementById("statusid").innerHTML = statusCard
    document.getElementById("pointsid").innerHTML = points
    document.getElementById("scoreid").innerHTML = score>0? "+"+score:score

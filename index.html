@@ -21,11 +21,11 @@
         <div  class="con sword"><img id="arr1" src="./Images/swordbg.png" alt=""></div>
         <div  class="con sword"><img id="arr2" src="./Images/swordbg.png" alt=""></div>
         <div  class="con demon"><img id="arr3" src="./Images/demonbg.png" alt=""></div>
-        <div  class="con blank"><img id="arr4" src="./Images/shieldbg.jpg" alt=""></div>
+        <div  class="con blank"><img id="arr4" src="./Images/shieldbg.png" alt=""></div>
         <div  class="con demon"><img id="arr5" src="./Images/demonbg.png" alt=""></div>
         <div class="con wizard"><img id="arr6" src="./Images/wizardbg.png" alt=""></div>
-        <div  class="con blank"><img id="arr7"  src="./Images/shieldbg.jpg" alt=""></div>
-        <div  class="con blank"><img id="arr8" src="./Images/shieldbg.jpg" alt=""></div>
+        <div  class="con blank"><img id="arr7"  src="./Images/shieldbg.png" alt=""></div>
+        <div  class="con blank"><img id="arr8" src="./Images/shieldbg.png" alt=""></div>
         <div  class="con demon"><img id="arr9" src="./Images/demonbg.png" alt=""></div>
     </div> 
     <div class="maya">
@@ -33,22 +33,26 @@
         <div  class="con sword"><img  id="arr12" src="./Images/swordbg.png" alt=""></div>
         <div  class="con wizard"><img id="arr13"  src="./Images/wizardbg.png" alt=""></div>
         <div  class="con demon"><img  id="arr14" src="./Images/demonbg.png" alt=""></div>
-        <div  class="con blank"><img  id="arr15" src="./Images/shield.jpg" alt=""></div>
+        <div  class="con blank"><img  id="arr15" src="./Images/shieldbf.png" alt=""></div>
         <div  class="con demon"><img  id="arr16" src="./Images/demonbg.png" alt=""></div>
         <div  class="con sword"><img  id="arr17" src="./Images/swordbg.png" alt=""></div>
         <div  class="con wizard"><img id="arr18"  src="./Images/wizardbg.png" alt=""></div>
-        <div  class="con blank"><img  id="arr19" src="./Images/shieldbg.jpg" alt=""></div>
+        <div  class="con blank"><img  id="arr19" src="./Images/shieldbg.png" alt=""></div>
         <div  class="con sword"><img  id="arr20" src="./Images/swordbg.png" alt=""></div>
     </div>
 
   </div>
   <div class="buttons">
-
-    <input type="button" class="game_button" value="GENERATE MOVE" onclick="StartGame(1)">
+    <input type="button" class="game_button" value="RESET GAME" onclick="restartGame()">
+    <input type="button" class="game_button" value="GENERATE MOVE" onclick="StartGame()">
     <input type="button" class="game_button red"  value="QUIT GAME" onclick="QuitGame()">
   </div>
 
   <div class="status_box" >
+    <div class="score">
+        <h3 class="score_title">DRAWN</h3>
+        <p id="chosenid"></p>
+    </div>
     <div class="score">
         <h3 class="score_title">YOUR MOVE</h3>
         <p id="moveid"></p>
