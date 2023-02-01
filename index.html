@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harry Potter Game</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script_html.js"></script>
 </head>
 <body>
     <div class="title_HEAD">
@@ -17,39 +17,54 @@
     </div>
   <div class="content">
     <div class="maya">
-        <div class="con"></div>
-        <div class="con"></div>
-        <div class="con"></div>
-        <div class="con"></div>
-        <div class="con"></div>
-        <div class="con"></div>
-        <div class="con"></div>
-        <div class="con"></div>
-        <div class="con"></div>
-        <div class="con"></div>
-    </div>
+        <div  class="con wizard"><img id="arr0" src="./Images/wizardbg.png" alt=""></div>
+        <div  class="con sword"><img id="arr1" src="./Images/swordbg.png" alt=""></div>
+        <div  class="con sword"><img id="arr2" src="./Images/swordbg.png" alt=""></div>
+        <div  class="con demon"><img id="arr3" src="./Images/demonbg.png" alt=""></div>
+        <div  class="con blank"><img id="arr4" src="./Images/shieldbg.jpg" alt=""></div>
+        <div  class="con demon"><img id="arr5" src="./Images/demonbg.png" alt=""></div>
+        <div class="con wizard"><img id="arr6" src="./Images/wizardbg.png" alt=""></div>
+        <div  class="con blank"><img id="arr7"  src="./Images/shieldbg.jpg" alt=""></div>
+        <div  class="con blank"><img id="arr8" src="./Images/shieldbg.jpg" alt=""></div>
+        <div  class="con demon"><img id="arr9" src="./Images/demonbg.png" alt=""></div>
+    </div> 
     <div class="maya">
-        <div class="con"></div>
-        <div class="con"></div>
-        <div class="con"></div>
-        <div class="con"></div>
-        <div class="con"></div>
-        <div class="con"></div>
-        <div class="con"></div>
-        <div class="con"></div>
-        <div class="con"></div>
-        <div class="con"></div>
+        <div  class="con wizard"><img id="arr10"  src="./Images/wizardbg.png" alt=""></div>
+        <div  class="con sword"><img  id="arr12" src="./Images/swordbg.png" alt=""></div>
+        <div  class="con wizard"><img id="arr13"  src="./Images/wizardbg.png" alt=""></div>
+        <div  class="con demon"><img  id="arr14" src="./Images/demonbg.png" alt=""></div>
+        <div  class="con blank"><img  id="arr15" src="./Images/shield.jpg" alt=""></div>
+        <div  class="con demon"><img  id="arr16" src="./Images/demonbg.png" alt=""></div>
+        <div  class="con sword"><img  id="arr17" src="./Images/swordbg.png" alt=""></div>
+        <div  class="con wizard"><img id="arr18"  src="./Images/wizardbg.png" alt=""></div>
+        <div  class="con blank"><img  id="arr19" src="./Images/shieldbg.jpg" alt=""></div>
+        <div  class="con sword"><img  id="arr20" src="./Images/swordbg.png" alt=""></div>
     </div>
 
   </div>
   <div class="buttons">
-    <input type="button" class="game_button" value="GENERATE MOVE">
-    <input type="button" class="game_button red"  value="QUIT GAME">
+
+    <input type="button" class="game_button" value="GENERATE MOVE" onclick="StartGame(1)">
+    <input type="button" class="game_button red"  value="QUIT GAME" onclick="QuitGame()">
   </div>
 
-  <div class="score">
-    <h3 class="score_title">Score</h3>
-    <p>50</p>
-</div>
+  <div class="status_box" >
+    <div class="score">
+        <h3 class="score_title">YOUR MOVE</h3>
+        <p id="moveid"></p>
+    </div>
+    <div class="score">
+        <h3 class="score_title">POINTS</h3>
+        <p id="pointsid"></p>
+    </div>
+    <div class="score">
+        <h3 class="score_title">SCORES</h3>
+        <p id="scoreid"></p>
+    </div>
+    <div class="score">
+        <h3 class="score_title stat">STATUS</h3>
+        <p id="statusid"></p>
+    </div>
+  </div>
 </body>
 </html>
