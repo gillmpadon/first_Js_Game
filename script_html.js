@@ -5,8 +5,18 @@ var firstTime = true, killed = false
 function restartGame(){
     window.location.reload(true)
 }
+function cleanAll(){
+    document.getElementsByClassName("maya")[0].style.display = "none"
+    document.getElementsByClassName("maya")[1].style.display = "none"
+    for(var i=0; i<5;i++) {
+        document.getElementsByClassName("score")[i].style.display = "none"
+    }
+}
 function QuitGame(){
-    window.alert(`Congratulations, you earned ${points} points.`)
+    cleanAll()
+    document.getElementById("new-Element").style.display ="block"
+    document.getElementById("new-Element").innerHTML = "CONGRATULATIONS  <br>  YOUR  TOTAL <br>  SCORE IS  <br> " + points
+
 }
 
 function StartGame(choice){
@@ -16,9 +26,9 @@ function StartGame(choice){
     }
     if(killed){
 
-        window.alert("YOU ARE KILLED!")
-        restartGame()
-        window.alert("NEW GAME! GOODLUCK")
+        cleanAll()
+        document.getElementById("new-Element").style.display ="block"
+    document.getElementById("new-Element").innerHTML = "YOU HAVE BEEN KILLED!  <br> TO PLAY AGAIN <br>RESTART THE GAME" 
     }
     console.log("What do you want to do?\nGenerate Move\t[1]\nExit Game\t[0]\n")
    
