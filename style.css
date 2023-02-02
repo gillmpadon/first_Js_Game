@@ -170,4 +170,33 @@ body{
 }
 
 
+#howtoplayme{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
 
+#howtoplayme table,th,tr,td{
+    border: 1px solid white;
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    
+}
+#howtoplayme table{
+    top: -50px;
+}
+#howtoplayme p{
+    color: white;
+    padding: 10px;
+    text-align: justify;
+    text-indent: 50px;
+    
+    
+}
+
+#lastline{
+    position: relative;
+    top: -50px;
+}

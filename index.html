@@ -17,9 +17,45 @@
         <h1 id="amazing">AMAZING WIZARD</h1>
        
     </div>
+    
   <div class="content">
     <p id="new-Element" style="display: none;"></p>
-    <div class="maya">
+    <div id="howtoplayme" style="display:none">
+        <p>You will play this game based on luck, you will move randomly ranging from -4 to 4. You will encounter a lot of symbols 
+            that you can play with. They will determine your scores by which you need to be careful. The tables belows shows the score equivalent.
+        <table style="color: white;">
+            
+            </p>
+            <tr>
+                <th>NAME</th>
+                <th>SYMBOL</th>
+                <th>SCORE</th>
+
+            </tr>
+            <tr>
+                <td>PUMPKIN</td>
+                <td>B</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>WIZARD</td>
+                <td>W</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>BROOM</td>
+                <td>S</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>DEMON</td>
+                <td>D</td>
+                <td>-5</td>
+            </tr>
+        </table>
+        <p id="lastline">If you press QUIT , you will be able to see how many points you got from your luck. But when you have BAD LUCK , all of your points will be taken as well as you are taken out from the game.</p>
+    </div>
+    <div class="maya" >
         <div  class="con wizard"><img id="arr0" src="./Images/newwizard.png" alt=""></div>
         <div  class="con sword"><img id="arr1" src="./Images/newsword.png" alt=""></div>
         <div  class="con sword"><img id="arr2" src="./Images/newsword.png" alt=""></div>
@@ -48,6 +84,7 @@
   <div class="buttons">
     <input type="button" class="game_button" value="RESET GAME" onclick="restartGame()">
     <input type="button" class="game_button" value="GENERATE MOVE" onclick="StartGame()">
+    <input type="button" class="game_button"  value="HOW TO PLAY?" onclick="howtoplay()">
     <input type="button" class="game_button red"  value="QUIT GAME" onclick="QuitGame()">
   </div>
 

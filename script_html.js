@@ -12,14 +12,18 @@ function cleanAll(){
         document.getElementsByClassName("score")[i].style.display = "none"
     }
 }
+function howtoplay(){
+    cleanAll()
+    document.getElementById("howtoplayme").style.display="block"
+}
 function QuitGame(){
     cleanAll()
     document.getElementById("new-Element").style.display ="block"
     document.getElementById("new-Element").innerHTML = "CONGRATULATIONS  <br>  YOUR  TOTAL <br>  SCORE IS  <br> " + points
-
+    document.getElementById("howtoplayme").style.display="none"
 }
 
-function StartGame(choice){
+function StartGame(){
     if(img!=""){
         document.getElementById(img).style.visibility = "hidden"
         img=""
